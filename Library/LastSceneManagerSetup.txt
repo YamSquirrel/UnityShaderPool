@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/QQpractice/QQpractice.unity
+- path: Assets/Reference/Athena/Athena_Calibration.unity
   isLoaded: 1
   isActive: 1

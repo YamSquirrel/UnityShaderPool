@@ -1,7 +1,13 @@
 ﻿
-Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2017
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnityShaderPool", "UnityShaderPool.csproj", "{6068B855-73FB-6434-F66D-DD381C3487C3}"
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp", "Assembly-CSharp.csproj", "{7096EAF7-FB8B-AEAC-41EC-417E009E2ECF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Unity.Postprocessing.Runtime", "Unity.Postprocessing.Runtime.csproj", "{7DEC8B0E-C468-FD3D-FA1B-365E921820D8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp-Editor", "Assembly-CSharp-Editor.csproj", "{A81F31A6-5F2D-FC9C-1EBE-30D5DE3E3560}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Unity.Postprocessing.Editor", "Unity.Postprocessing.Editor.csproj", "{D46F4F1D-36A4-001E-4929-B39B9A655BEE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -9,12 +15,27 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{6068B855-73FB-6434-F66D-DD381C3487C3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{6068B855-73FB-6434-F66D-DD381C3487C3}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{6068B855-73FB-6434-F66D-DD381C3487C3}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{6068B855-73FB-6434-F66D-DD381C3487C3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7096EAF7-FB8B-AEAC-41EC-417E009E2ECF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7096EAF7-FB8B-AEAC-41EC-417E009E2ECF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7096EAF7-FB8B-AEAC-41EC-417E009E2ECF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7096EAF7-FB8B-AEAC-41EC-417E009E2ECF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7DEC8B0E-C468-FD3D-FA1B-365E921820D8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7DEC8B0E-C468-FD3D-FA1B-365E921820D8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7DEC8B0E-C468-FD3D-FA1B-365E921820D8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7DEC8B0E-C468-FD3D-FA1B-365E921820D8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A81F31A6-5F2D-FC9C-1EBE-30D5DE3E3560}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A81F31A6-5F2D-FC9C-1EBE-30D5DE3E3560}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A81F31A6-5F2D-FC9C-1EBE-30D5DE3E3560}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A81F31A6-5F2D-FC9C-1EBE-30D5DE3E3560}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D46F4F1D-36A4-001E-4929-B39B9A655BEE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D46F4F1D-36A4-001E-4929-B39B9A655BEE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D46F4F1D-36A4-001E-4929-B39B9A655BEE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D46F4F1D-36A4-001E-4929-B39B9A655BEE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = Assembly-CSharp.csproj
 	EndGlobalSection
 EndGlobal
