@@ -137,6 +137,7 @@ Shader "SSS/Skin"
 					#endif
                 #endif
                 fixed3 finalColor = (ambient + (diffuse + specular) * _LightColor0.rgb * attenuation) * albedo;
+				//fixed3 finalColor = diffuse;
 
 				#ifdef DEBUG_CURVE
 					return fixed4(cuv,cuv,cuv,1);
