@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: PlanarShadow_3
+  m_Shader: {fileID: 4800000, guid: faef219ad4afe244ea722e9d633d25f1, type: 3}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs: []
+    m_Floats:
+    - _ATT: 11.985075
+    - _Intensity: 6.9850755
+    m_Colors: []

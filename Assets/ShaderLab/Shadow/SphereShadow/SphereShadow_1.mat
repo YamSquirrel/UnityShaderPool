@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: SphereShadow_1
+  m_Shader: {fileID: 4800000, guid: ad9da586cf20c794b99d31cef1f920fe, type: 3}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs: []
+    m_Floats:
+    - _Intensity: 0.74626863
+    - _spR: 0.48170835
+    m_Colors:
+    - _spPos: {r: 1.1663225, g: 1.0330982, b: -1.0447576, a: 1}
