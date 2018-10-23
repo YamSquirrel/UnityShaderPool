@@ -65,7 +65,7 @@ fixed stripes(fixed2 uv)
 {
 
     fixed noi = noise(uv*fixed2(0.5,1.) + fixed2(1.,3.));
-    return ramp(fmod(uv.y*4. + _Time.y/2.+sin(_Time.y + sin(_Time.y*0.63)),1.),0.5,0.6)*noi;
+    return ramp(fmod(uv.y*20. + _Time.y/0.5+sin(_Time.y + sin(_Time.y*0.63)),1.),0.5,0.6)*noi;
 }
 
 fixed3 getVideo(fixed2 uv)

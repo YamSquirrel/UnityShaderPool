@@ -55,12 +55,12 @@ fixed3 hash3(fixed3 p)
     return frac(fixed3(p.x * p.y, p.z*p.x, p.y*p.z))-0.5;
 }
 
-fixed3 update(in fixed3 vel, fixed3 pos, in fixed id)
+fixed3 update(in fixed3 vel/*, fixed3 pos, in fixed id*/)
 {   
-    vel.xyz = vel.xyz*.999 + (hash3(vel.xyz + time)*2.)*7.;
+    vel.xyz = vel.xyz + (hash3(vel.xyz + time)*2.);
     
-    fixed d = pow(length(pos)*1.2, 0.75);
-    vel.xyz = lerp(vel.xyz, -pos*d, sin(-time*.55)*0.5+0.5);
+    //fixed d = pow(length(pos)*1.2, 0.75);
+    //vel.xyz = lerp(vel.xyz, -pos*d, sin(-time*.55)*0.5+0.5);
     
     return vel;
 }
@@ -73,30 +73,31 @@ fixed4 frag(v2f i) : SV_Target{
     fixed4 col= fixed4(0,0,0,0);
     fixed2 w = 1./1;
     
-    fixed3 pos = tex2D(_MainTex, fixed2(q.x,q.y)).xyz;
+    //fixed3 pos = tex2D(_MainTex, fixed2(q.x,q.y)).xyz;
     fixed3 velo = tex2D(_MainTex, fixed2(q.x,q.y)).xyz;
-    velo = update(velo, pos, q.x);
+    velo = update(velo/*, pos, q.x*/);
     
-    if (i.uv.y < 30.)
-    {
-    	col.rgb = velo;
-    }
-    else
-    {
-        pos.rgb += velo*0.002;
-        col.rgb = pos.rgb;
-    }
+    // if (i.uv.y < 30.)
+    // {
+     	col.rgb = velo;
+    // }
+    // else
+    // {
+    //     pos.rgb += velo*0.002;
+    //     col.rgb = pos.rgb;
+    // }
+
 	
     //Init
-    if (iFrame < 10) 
-    {
-        if (i.uv.y < 30.)
-        	col = ((tex2D(_SecondTex, q*1.9))-.5)*10.;
-        else
-        {
-            col = ((tex2D(_SecondTex,i.uv)))*.5;
-        }
-    }
+    // if (iFrame < 10) 
+    // {
+    //     if (i.uv.y < 30.)
+    //     	col = ((tex2D(_SecondTex, q*1.9))-.5)*10.;
+    //     else
+    //     {
+    //         col = ((tex2D(_SecondTex,i.uv)))*.5;
+    //     }
+    // }
     
 	return col;
 }
