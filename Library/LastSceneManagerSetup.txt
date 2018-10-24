@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/AssetStore/AdvancedHairShaderPack/hairtest.unity
+- path: Assets/Calibration/Scenes/Cali_V4.unity
   isLoaded: 1
   isActive: 1

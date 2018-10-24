@@ -331,6 +331,7 @@
      <None Include="Assets\cBuiltinShaders\DefaultResourcesExtra\cStandard.shader" />
      <None Include="Assets\cBuiltinShaders\CGIncludes\cUnityStandardBRDF.cginc" />
      <None Include="Assets\Calibration\PostProcessing-2\PostProcessing\Shaders\API\XboxOne.hlsl" />
+     <None Include="Assets\cBuiltinShaders\Custome\cStandard_test.shader" />
      <None Include="Assets\Calibration\PostProcessing\Resources\Shaders\AmbientOcclusion.cginc" />
      <None Include="Assets\Calibration\PostProcessing-2\PostProcessing\Shaders\Sampling.hlsl" />
      <None Include="Assets\BlogGithub\QQpractice\shader\answer\Stage1_Blinn-Phong(surfaceShader).shader" />
@@ -355,6 +356,9 @@
  </Reference>
  <Reference Include="Unity.TextMeshPro">
  <HintPath>D:/githubProject/UnityShaderPool/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.ShaderGraph.Editor">
+ <HintPath>D:/githubProject/UnityShaderPool/Library/ScriptAssemblies/Unity.ShaderGraph.Editor.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.AIModule">
  <HintPath>C:/Program Files/Unity2018.2.5f1/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>

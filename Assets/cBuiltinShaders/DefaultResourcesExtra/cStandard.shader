@@ -51,11 +51,12 @@ Shader "cStandard"
         #define UNITY_SETUP_BRDF_INPUT MetallicSetup
     ENDCG
 
+    // One SubShader should have at least one pass
     SubShader
     {
         Tags { "RenderType"="Opaque" "PerformanceChecks"="False" }
+        // Built-in LOD: Reflective VertexLit = 150; Bumped Specular = 300; Parallax Specular = 600;
         LOD 300
-
 
         // ------------------------------------------------------------------
         //  Base forward pass (directional light, emission, lightmaps, ...)
@@ -249,10 +250,12 @@ Shader "cStandard"
             // SM2.0: NOT SUPPORTED shader_feature ___ _DETAIL_MULX2
             // SM2.0: NOT SUPPORTED shader_feature _PARALLAXMAP
 
+            // SM2.0: NOT SUPPORTED SHADOWS_SOFT DIRLIGHTMAP_COMBINED
             #pragma skip_variants SHADOWS_SOFT DIRLIGHTMAP_COMBINED
 
             #pragma multi_compile_fwdbase
             #pragma multi_compile_fog
+            // SM2.0: NOT SUPPORTED #pragma multi_compile_instancing
 
             #pragma vertex vertBase
             #pragma fragment fragBase

@@ -1,2 +1,5 @@
+C:\Users\hantianhe\AppData\Local\Unity\cache\packages\packages.unity.com\com.unity.postprocessing@2.0.9-preview
+C:\Users\hantianhe\AppData\Local\Unity\cache\packages\packages.unity.com\com.unity.render-pipelines.core@3.0.0-preview
+C:\Users\hantianhe\AppData\Local\Unity\cache\packages\packages.unity.com\com.unity.render-pipelines.lightweight@3.0.0-preview
+C:\Users\hantianhe\AppData\Local\Unity\cache\packages\packages.unity.com\com.unity.shadergraph@3.0.0-preview
 D:/githubProject/UnityShaderPool/Assets\Calibration\PostProcessing-2
-D:\githubProject\UnityShaderPool\Packages\com.unity.postprocessing
