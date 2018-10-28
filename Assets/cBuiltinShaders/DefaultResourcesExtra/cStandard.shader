@@ -1,6 +1,6 @@
 // Unity built-in shader source. Copyright (c) 2016 Unity Technologies. MIT license (see license.txt)
 
-Shader "cStandard"
+Shader "Hidden/cStandard"
 {
     Properties
     {
@@ -72,7 +72,7 @@ Shader "cStandard"
             #pragma target 3.0
 
             // -------------------------------------
-
+            // LOD300 LOD150 not much Shader_feature difference
             #pragma shader_feature _NORMALMAP
             #pragma shader_feature _ _ALPHATEST_ON _ALPHABLEND_ON _ALPHAPREMULTIPLY_ON
             #pragma shader_feature _EMISSION
@@ -89,6 +89,7 @@ Shader "cStandard"
             // Uncomment the following line to enable dithering LOD crossfade. Note: there are more in the file to uncomment for other passes.
             //#pragma multi_compile _ LOD_FADE_CROSSFADE
 
+            // vertBase:vertForwardBase fragBase:fragForwardBaseInternal
             #pragma vertex vertBase
             #pragma fragment fragBase
             #include "../CGIncludes/cUnityStandardCoreForward.cginc"

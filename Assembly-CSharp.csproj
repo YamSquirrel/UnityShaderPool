@@ -117,6 +117,7 @@
      <None Include="Assets\BlogGithub\QQpractice\shader\answer\Stage2_screenPosUV(shaderForge).shader" />
      <None Include="Assets\Templates\shader\baseCginc.cginc" />
      <None Include="Assets\Calibration\V4PBR\UnityStandardInputV4.cginc" />
+     <None Include="Assets\cBuiltinShaders\DiyShaders\diyStandard.shader" />
      <None Include="Assets\Calibration\PostProcessing-2\PostProcessing\Shaders\Builtins\CopyStd.shader" />
      <None Include="Assets\BlogGithub\QQpractice\shader\answer\Stage2_worldPosUV(shaderForge).shader" />
      <None Include="Assets\Calibration\PostProcessing-2\PostProcessing\Shaders\Builtins\Bloom.shader" />
@@ -279,7 +280,7 @@
      <None Include="Assets\Calibration\PostProcessing\Resources\Shaders\EyeAdaptation.cginc" />
      <None Include="Assets\BlogGithub\ShaderMan\Shaders\Voronoi.shader" />
      <None Include="Assets\Templates\shader\baseDeferred.shader" />
-     <None Include="Assets\cBuiltinShaders\Custome\PBR_Base_Core.shader" />
+     <None Include="Assets\cBuiltinShaders\DiyShaders\PBR_Base_Core.shader" />
      <None Include="Assets\BlogGithub\QQpractice\shader\qqBlinnPhong.shader" />
      <None Include="Assets\Calibration\PostProcessing\Resources\Shaders\GrainGen.shader" />
      <None Include="Assets\cBuiltinShaders\CGIncludes\cUnityStandardCore.cginc" />
@@ -298,6 +299,7 @@
      <None Include="Assets\BlogGithub\ShaderMan\Shaders\Industry.shader" />
      <None Include="Assets\BlogGithub\Ben Fleix\Distortion_Felix.shader" />
      <None Include="Assets\Calibration\PostProcessing-2\PostProcessing\Shaders\Debug\Overlays.shader" />
+     <None Include="Assets\cBuiltinShaders\CGIncludes\diyUnityStandardBRDF.cginc" />
      <None Include="Assets\cBuiltinShaders\CGIncludes\cUnityInstancing.cginc" />
      <None Include="Assets\Calibration\PostProcessing-2\PostProcessing\Shaders\API\Metal.hlsl" />
      <None Include="Assets\Calibration\PostProcessing-2\PostProcessing\Shaders\Builtins\Distortion.hlsl" />
@@ -310,6 +312,7 @@
      <None Include="Assets\BlogGithub\QQpractice\shader\answer\GridBlend\Shader\Mya_GridBlend_World_Relative.shader" />
      <None Include="Assets\Calibration\PostProcessing\Resources\Shaders\Bloom.shader" />
      <None Include="Assets\Calibration\PostProcessing-2\PostProcessing\Shaders\Builtins\ScreenSpaceReflections.shader" />
+     <None Include="Assets\cBuiltinShaders\CGIncludes\cUnityImageBasedLighting.cginc" />
      <None Include="Assets\Calibration\PostProcessing-2\PostProcessing\Shaders\Builtins\Copy.shader" />
      <None Include="Assets\BlogGithub\ShaderMan\Shaders\Isolines.shader" />
      <None Include="Assets\AssetStore\AdvancedHairShaderPack\shaders\Aniso_Circular.shader" />
@@ -328,10 +331,10 @@
      <None Include="Assets\Calibration\PostProcessing\Resources\Shaders\ColorGrading.cginc" />
      <None Include="Assets\Calibration\PostProcessing-2\PostProcessing\Shaders\Debug\Waveform.shader" />
      <None Include="Assets\AssetStore\AdvancedHairShaderPack\shaders\normals\Aniso_Kajiya_bump.shader" />
+     <None Include="Assets\cBuiltinShaders\CGIncludes\diyUnityStandardCore_Forward.cginc" />
      <None Include="Assets\cBuiltinShaders\DefaultResourcesExtra\cStandard.shader" />
      <None Include="Assets\cBuiltinShaders\CGIncludes\cUnityStandardBRDF.cginc" />
      <None Include="Assets\Calibration\PostProcessing-2\PostProcessing\Shaders\API\XboxOne.hlsl" />
-     <None Include="Assets\cBuiltinShaders\Custome\cStandard_test.shader" />
      <None Include="Assets\Calibration\PostProcessing\Resources\Shaders\AmbientOcclusion.cginc" />
      <None Include="Assets\Calibration\PostProcessing-2\PostProcessing\Shaders\Sampling.hlsl" />
      <None Include="Assets\BlogGithub\QQpractice\shader\answer\Stage1_Blinn-Phong(surfaceShader).shader" />
@@ -345,20 +348,35 @@
      <None Include="Assets\Calibration\PostProcessing-2\PostProcessing\Shaders\Debug\Histogram.shader" />
      <None Include="Assets\Calibration\PostProcessing-2\PostProcessing\Shaders\Builtins\ExposureHistogram.compute" />
      <None Include="Assets\BlogGithub\ShaderMan\Shaders\301&apos;s Fire ShaderRemix 3.shader" />
+ <Reference Include="Unity.RenderPipelines.Core.Editor">
+ <HintPath>D:/githubProject/UnityShaderPool/Library/ScriptAssemblies/Unity.RenderPipelines.Core.Editor.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.RenderPipelines.Core.Runtime">
+ <HintPath>D:/githubProject/UnityShaderPool/Library/ScriptAssemblies/Unity.RenderPipelines.Core.Runtime.dll</HintPath>
+ </Reference>
  <Reference Include="UnityEditor.StandardEvents">
  <HintPath>D:/githubProject/UnityShaderPool/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
  </Reference>
  <Reference Include="Unity.TextMeshPro.Editor">
  <HintPath>D:/githubProject/UnityShaderPool/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
  </Reference>
+ <Reference Include="Unity.RenderPipelines.Lightweight.Runtime">
+ <HintPath>D:/githubProject/UnityShaderPool/Library/ScriptAssemblies/Unity.RenderPipelines.Lightweight.Runtime.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.RenderPipelines.Lightweight.Editor">
+ <HintPath>D:/githubProject/UnityShaderPool/Library/ScriptAssemblies/Unity.RenderPipelines.Lightweight.Editor.dll</HintPath>
+ </Reference>
  <Reference Include="Unity.PackageManagerUI.Editor">
  <HintPath>D:/githubProject/UnityShaderPool/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.ShaderGraph.Editor">
+ <HintPath>D:/githubProject/UnityShaderPool/Library/ScriptAssemblies/Unity.ShaderGraph.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.TextMeshPro">
  <HintPath>D:/githubProject/UnityShaderPool/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
  </Reference>
- <Reference Include="Unity.ShaderGraph.Editor">
- <HintPath>D:/githubProject/UnityShaderPool/Library/ScriptAssemblies/Unity.ShaderGraph.Editor.dll</HintPath>
+ <Reference Include="Unity.RenderPipelines.Core.IncludePaths">
+ <HintPath>D:/githubProject/UnityShaderPool/Library/ScriptAssemblies/Unity.RenderPipelines.Core.IncludePaths.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.AIModule">
  <HintPath>C:/Program Files/Unity2018.2.5f1/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>

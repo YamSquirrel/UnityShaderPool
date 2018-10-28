@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Calibration/Scenes/Cali_V4.unity
+- path: Assets/cBuiltinShaders/cForward.unity
   isLoaded: 1
   isActive: 1

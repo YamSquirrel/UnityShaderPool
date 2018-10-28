@@ -61,7 +61,7 @@
 //          UnityStandardDataToGbuffer
 //          UnityGetRawBakedOcclusions
 
-
+// to avoid double include:  #ifndef XXX #define XXX ... #endif
 #ifndef UNITY_STANDARD_CORE_INCLUDED
 #define UNITY_STANDARD_CORE_INCLUDED
 
@@ -496,6 +496,7 @@ half4 fragForwardBaseInternal (VertexOutputForwardBase i)
 {
     UNITY_APPLY_DITHER_CROSSFADE(i.pos.xy);
 
+    // DIY fragment input
     FRAGMENT_SETUP(s)
 
     UNITY_SETUP_INSTANCE_ID(i);
@@ -507,6 +508,7 @@ half4 fragForwardBaseInternal (VertexOutputForwardBase i)
     half occlusion = Occlusion(i.tex.xy);
     UnityGI gi = FragmentGI (s, occlusion, i.ambientOrLightmapUV, atten, mainLight);
 
+    // DIY BRDF lighting
     half4 c = UNITY_BRDF_PBS (s.diffColor, s.specColor, s.oneMinusReflectivity, s.smoothness, s.normalWorld, -s.eyeVec, gi.light, gi.indirect);
     c.rgb += Emission(i.tex.xy);
 
